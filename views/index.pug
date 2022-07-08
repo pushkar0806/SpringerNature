@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	h4(class='card-title') Sign Up
+	form(id='registration' action='/signup' method='POST')
+		.form-group
+			input.form-control(id='first_name' name='first_name' type='text' placeholder='First Name' required)
+		.form-group
+			input.form-control(id='last_name' name='last_name' type='text' placeholder='Last Name' required)
+		.form-group
+			input.form-control(id='phone' name='phone' type='text' placeholder='Phone')
+		.form-group
+			input.form-control(id='email' name='email' type='email' placeholder='Email' required)
+		.form-group
+			input.form-control(id='password' name='password' type='password' placeholder='Password' minlength="6")
+		.form-check
+			input.form-check-input(id="isChecked" name='isChecked' type='checkbox')
+			label.form-check-label(for="isChecked") Subscribe to our newsletter
+		.form-group.bump-down
+			button.btn.btn-primary(type='submit') SIGN IN
+
+		p
+			| By clicking Sign Up you agree to our <a href="http://localhost:8110">terms of services 
+
