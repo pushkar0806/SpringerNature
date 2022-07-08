@@ -1,7 +1,6 @@
 const register = (req, res) => {
     try {
         const { first_name, last_name, email, isChecked } = req.body;
-
         const message = 
                 isChecked 
                 ? 
